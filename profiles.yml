@@ -1,0 +1,10 @@
+london_bicycles_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth  # or service-account
+      project: mythic-fulcrum-509507-k0
+      dataset: dbt_london_bicycles
+      location: EU   # Required: BigQuery public dataset is in EU
+      threads: 4

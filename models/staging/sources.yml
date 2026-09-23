@@ -1,0 +1,6 @@
+name: london_bicycles
+    database: bigquery-public-data
+    schema: london_bicycles
+    tables:
+      - name: cycle_hire
+      - name: cycle_stations
